@@ -31,6 +31,42 @@ body {
         border-radius: 5px; /* Esquinas redondeadas en la imagen */
     }
 }
+#paleta-vegetal {
+    text-align: center;
+}
+
+/* Contenedor de la lista */
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.lista-plantas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
+    gap: 30px; /* Espacio entre elementos */
+    list-style: none; /* Quitar el estilo de lista predeterminado */
+    padding: 0;
+}
+
+.lista-plantas li {
+    display: flex;
+    border: 3px solid #ddd;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagenes */
+.lista-plantas img {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Texto */
+.lista-plantas span {
+    font-size: 1em;
+}
 
 header {
     background-color: #ffffff;
@@ -107,7 +143,31 @@ footer {
     padding: 1rem;
 }
 
+#sobre-mi .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y la lista */
+}
 
+/* Estilo para la imagen */
+.imagen-lado .silueta {
+    width: 250px; /* Ajusta el tamaño según necesites */
+    height: auto;
+}
+
+/* Estilo para la lista de información */
+.texto-lado .lista-informacion {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Estilo para los elementos de la lista */
+.texto-lado .lista-informacion li {
+    margin-bottom: 10px; /* Espacio entre cada ítem de la lista */
+}
 /*Formato de cel*/
 @media (max-width: 768px) {
     header {
