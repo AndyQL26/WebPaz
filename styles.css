@@ -1,0 +1,138 @@
+body {
+    font-family: Careny, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #483C46;
+    color:#483C46; 
+    .container {
+        max-width: 1200px; /* Limita el ancho del contenedor */
+        margin: auto; /* Centra el contenedor */
+    }
+    
+    .lista-comidas {
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0; /* Elimina el padding */
+        display: grid; /* Usa grid para crear columnas */
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+        gap: 20px; /* Espacio entre elementos */
+    }
+    
+    .lista-comidas li {
+        background-color: #fff; /* Color de fondo para cada item */
+        border: 3px solid #ddd; /* Bordes */
+        border-radius: 5px; /* Esquinas redondeadas */
+        padding: 10px; /* Espaciado interno */
+        text-align: center; /* Centra el texto */
+    }
+    
+    .lista-comidas img {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la relación de aspecto de la imagen */
+        border-radius: 5px; /* Esquinas redondeadas en la imagen */
+    }
+}
+
+header {
+    background-color: #ffffff;
+    color: #483C46;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    max-width: 50px; /* Ajusta el tamaño del logo según lo que necesites */
+    height: auto;
+    margin-right: 2px; /* Espaciado entre el logo y el borde derecho */
+}
+
+.logo-disco {
+    max-width: 200px; /* Ajusta el tamaño del logo*/
+    height: auto;
+    margin-right: 10px; /* Espaciado entre el logo y el borde derecho */
+}
+.texto-disco {
+    max-width: 300px; /* Ajusta el tamaño del logo*/
+    height: auto;
+    margin-right: 10px; /* Espaciado entre el logo y el borde derecho */
+    margin-top: -80px;
+}
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Opcional: centra verticalmente si el contenedor tiene altura */
+}
+
+.logo {
+    margin: 0 10px; /* Opcional: agrega espacio entre los logos */
+}
+
+.DiagF {
+    max-width: 50%; /* Cambia el porcentaje según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Permite centrar la imagen si es necesario */
+    margin: 10px auto; /* Centra la imagen horizontalmente y añade espacio */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #483C46;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #483C46;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/*Formato de cel*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca el logo y el menú en filas */
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px; /* Ajusta el tamaño del logo en móviles */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espacio entre los enlaces en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px; /* Tamaño más pequeño en pantallas extra pequeñas */
+    }
+}
